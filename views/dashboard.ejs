@@ -1,0 +1,120 @@
+<%- include('includes/navigation.ejs') %>
+
+
+<link rel="stylesheet" href="/css/cards.css" />
+
+<br>
+<h1>Rodadas</h1>
+
+
+<div class="route-card"> 
+    <div class ="mapa">
+        <img src="/images/Google maps route 1.png" width="100%" height="100%">
+    </div>
+    <div class="card-title">
+        Centro histórico
+    </div>
+    <div class="card-content">
+        27 de abril <br>
+        Habra tacos y agua de horchata...
+    </div>
+    <a class="button-ver-ruta" href=""> Ver ruta </a>
+    <a class="button-ver-mas" href=""> Ver más </a>
+</div>
+
+
+<p>Congue nisi vitae suscipit tellus. Donec ultrices tincidunt arcu non sodales neque sodales ut. Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Diam vel quam elementum pulvinar. Ac turpis egestas sed tempus urna et pharetra pharetra. Etiam erat velit scelerisque in dictum non consectetur a. Quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Penatibus et magnis dis parturient montes nascetur ridiculus mus mauris. In egestas erat imperdiet sed euismod nisi porta lorem. Sagittis id consectetur purus ut faucibus pulvinar elementum integer enim.</p>
+
+<p>Sit amet cursus sit amet dictum sit. Pretium fusce id velit ut tortor pretium viverra suspendisse. Aenean sed adipiscing diam donec adipiscing. Viverra tellus in hac habitasse platea dictumst. Vel turpis nunc eget lorem dolor sed viverra ipsum. Magna ac placerat vestibulum lectus mauris ultrices eros in cursus. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus. Nulla facilisi morbi tempus iaculis. Tortor id aliquet lectus proin nibh nisl condimentum id venenatis. Convallis aenean et tortor at risus. Diam maecenas ultricies mi eget mauris pharetra. Sit amet purus gravida quis blandit. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar.</p>
+
+<p>Risus in hendrerit gravida rutrum quisque non. Vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra. A arcu cursus vitae congue mauris rhoncus aenean vel. Etiam sit amet nisl purus in mollis. Nulla malesuada pellentesque elit eget gravida cum sociis natoque penatibus. Massa tincidunt nunc pulvinar sapien et ligula. Non sodales neque sodales ut. Adipiscing commodo elit at imperdiet dui accumsan. Risus viverra adipiscing at in tellus integer. In aliquam sem fringilla ut morbi tincidunt augue interdum. Lectus mauris ultrices eros in cursus turpis. Sit amet consectetur adipiscing elit. Ultricies mi eget mauris pharetra et ultrices. Eu scelerisque felis imperdiet proin. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Mattis vulputate enim nulla aliquet. Nec ultrices dui sapien eget.</p>
+
+<p>A lacus vestibulum sed arcu non odio euismod. In est ante in nibh mauris cursus mattis. Lacus vel facilisis volutpat est velit egestas dui id. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique. Egestas purus viverra accumsan in nisl nisi scelerisque. Netus et malesuada fames ac turpis egestas maecenas pharetra. Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam. Dictumst quisque sagittis purus sit amet. Non nisi est sit amet facilisis magna etiam. Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Amet justo donec enim diam vulputate ut. Euismod in pellentesque massa placerat duis. Viverra ipsum nunc aliquet bibendum enim facilisis gravida. Fusce ut placerat orci nulla pellentesque dignissim enim sit. Adipiscing bibendum est ultricies integer quis auctor.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet consectetur adipiscing elit. Dui ut ornare lectus sit amet est placerat. Sem fringilla ut morbi tincidunt. Suspendisse in est ante in. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Condimentum mattis pellentesque id nibh tortor id. Molestie nunc non blandit massa enim nec dui. Felis imperdiet proin fermentum leo vel orci porta non. Amet massa vitae tortor condimentum. Sed arcu non odio euismod lacinia at quis risus. Egestas erat imperdiet sed euismod.</p>
+
+<head>
+    <title>HyperFormula Mortgage Calculator</title>
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/milligram@1.4.1/dist/milligram.min.css"
+    />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <meta charset="UTF-8" />
+  </head>
+
+
+<div class="container">
+    <h2>Mortgage Calculator</h2>
+    <div class="input-group">
+    <label for="annual-interest-rate">Annual Interest Rate (%)</label>
+    <input type="number" id="annual-interest-rate" min="0" step="0.01" value="8">
+    </div>
+    <div class="input-group">
+    <label for="number-of-months">Number of Months</label>
+    <input type="number" id="number-of-months" min="0" value="360">
+    </div>
+    <div class="input-group">
+    <label for="loan-amount">Loan Amount ($)</label>
+    <input type="number" id="loan-amount" min="0" value="800000">
+    </div>
+    <div class="result">
+    <h3>Monthly Payment:</h3>
+    <span id="monthly-payment-placeholder">---</span>
+    </div>
+</div>
+
+<div class ="container">
+  <h2>Prueba de formula</h2>
+  <div class ="input-group">
+    <label for="test-formula">Fórmula</label>
+    <input type="text" id="test-formula">
+  </div>
+  <div class ="input-group">
+    <input type="button" id="apply-button" value="Aplicar">
+  </div>
+  <div class="resultado">
+    <h3>Resultado</h3>
+    <span id="resultado-placeholder">---</span>
+  </div>
+</div>
+
+<div class ="container">
+
+  <select name="parameter" id="parameter">
+    <option value="Gasolina">Gasolina</option>
+    <option value="Velocidad">Velocidad</option>
+  </select>
+
+  <select name="filters" id="filters">
+    <option value="Menor que">Menor que</option>
+    <option value="Mayor que">Mayor que</option>
+    <option value="Menor que">Menor o igual a</option>
+    <option value="Mayor que">Mayor o igual a</option>
+    <option value="Entre valores">Entre valores</option>
+    <option value="Igual a">Igual a</option>
+    <option value="Diferente a">Diferente a</option>
+  </select>
+
+  <input type="number" id="parameter-value">
+
+  <div class ="input-group">
+    <input type="button" id="apply-button2" value="Aplicar">
+  </div>
+  <div class="resultado">
+    <h3>Resultado</h3>
+    <span id="resultado-placeholder2">---</span>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/hyperformula/dist/hyperformula.full.min.js"></script>
+<script type="module" src="/js/calcScript.js"></script>
+
+
+
+<%- include('includes/footer.ejs') %>

@@ -1,0 +1,62 @@
+.route-card{
+    background-color: var(--card);
+    width: 100%;
+    min-height: 7em;
+    border-radius: var(--default-roundness);
+    padding: 0.7em;
+    display: grid;
+    grid-template-columns: 30% 50% auto;
+    grid-template-rows: 20% 40% auto;
+    grid-template-areas: "mapa titulo boton1"
+                         "mapa contenido boton2"
+                         "mapa contenido boton3";
+    grid-gap: 0.2em;
+}
+
+.button-ver-ruta, .button-ver-mas{
+    border-radius: var(--default-roundness);
+    background-color: var(--accent-main);
+    padding: 0.2em;
+    text-align: center;
+    align-self: center;
+    min-width: 4.2em;
+    /* justify-self: right; */
+}
+
+.button-ver-ruta:hover, .button-ver-mas:hover{
+    background-color: var(--accent-main-highlight);
+}
+
+.button-ver-ruta{
+    grid-area: boton1;
+}
+
+.button-ver-mas{
+    grid-area: boton2;
+}
+
+/* a {
+    background-color: #fff;
+} */
+
+.mapa{
+    grid-area: mapa;
+    display: flex;
+    background-color: black;
+    border-radius: 0.2em;
+    padding: none;
+    margin: none;
+    border: 0px;
+    border-collapse: collapse;
+}
+
+.card-content{
+    grid-area: contenido;
+}
+
+.card-title{
+    grid-area: titulo;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+    font-size: 18pt;
+}
